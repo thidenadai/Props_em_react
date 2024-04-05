@@ -10,16 +10,12 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <TxtInput
-        styleInput={styles.input}
-        onChangeText={(text) => setMensagem(text)}
-      />
       <BtnComponent
         styleTxt={styles.buttonText}
         styleBtn={styles.button}
         onPress={setMensagem}
       />
-      <TextComponent styleBtn={styles.input} txt={` ${msg}`} />
+      <TextComponent styleBtn={styles.input} txt={msg} />
     </View>
   );
 }
