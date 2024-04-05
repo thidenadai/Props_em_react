@@ -10,11 +10,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <BtnComponent
-        styleTxt={styles.buttonText}
-        styleBtn={styles.button}
-        onPress={setMensagem}
-      />
+      <BtnComponent styleBtn={styles.button} onPress={setMensagem} />
       <TextComponent styleBtn={styles.input} txt={msg} />
     </View>
   );
